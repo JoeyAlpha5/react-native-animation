@@ -39,7 +39,7 @@ const App: () => Node = () => {
         rotateAnim,
         {
           toValue: 45,
-          duration: 2000,
+          duration: 3000,
           easing: Easing.linear,
           useNativeDriver: true,
         }
@@ -99,7 +99,7 @@ const App: () => Node = () => {
               borderRadius:rotateAnim.interpolate({
                 inputRange:[0,25,45],
                 outputRange:[100,100,70]
-              }),
+              })
             }
         ]}>
         </Animated.View>
@@ -138,7 +138,7 @@ const App: () => Node = () => {
               ],
               borderRadius:rotateAnim.interpolate({
                 inputRange:[0,25,45],
-                outputRange:[100,100,20]
+                outputRange:[100,100,70]
               }),
             }
         ]}>
@@ -150,7 +150,7 @@ const App: () => Node = () => {
 const styles = StyleSheet.create({
   mainView:{
     flex:1,
-    backgroundColor:'#000',
+    backgroundColor:'#1D1D1D',
     justifyContent:'center',
     alignItems:'center'
   },
@@ -160,7 +160,7 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems:'center',
     borderRadius:1,
-    backgroundColor:'#009688',   
+    backgroundColor:'#272727',   
     position:'absolute',
 
   },
@@ -170,7 +170,7 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems:'center',
     borderRadius:1,
-    backgroundColor:'#ff5722',
+    backgroundColor:'#3C3C3C',
     position:'absolute',
   },
   animatedThirdView:{
@@ -179,7 +179,7 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems:'center',
     borderRadius:1,
-    backgroundColor:'#e91e63',
+    backgroundColor:'#4E4E4E',
     position:'absolute',
   },
   animatedFourthView:{
@@ -188,7 +188,8 @@ const styles = StyleSheet.create({
     justifyContent:'center',
     alignItems:'center',
     borderRadius:1,
-    backgroundColor:'#673ab7',
+    backgroundColor:'#5D5D5D',
+    opacity:0.8,
   }
 });
 
